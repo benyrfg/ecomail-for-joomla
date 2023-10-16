@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="4.1" type="plugin" group="user" method="upgrade">
+	<name>Ecomail for Joomla </name>
+	<author>Petr Benes - petben.cz</author>
+	<creationDate>February 2023</creationDate>
+	<copyright>Copyright (C) 2023 Petr Benes. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GPLv2 or later</license>
+	<authorEmail>info@petben.cz</authorEmail>
+	<authorUrl>https://petben.cz</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_USER_ECOMAIL_PLUGIN_DESC</description>
+	<files>
+		<filename plugin="ecomail">ecomail.php</filename>
+	</files>
+	 	<languages folder="plugin">
+        <language tag="en-GB">language/en-GB/plg_user_ecomail.sys.ini</language>
+        <language tag="cs-CZ">language/cs-CZ/plg_user_ecomail.sys.ini</language>
+    </languages>
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+				<field
+					name="ecomailapikey"
+					type="password"
+					label="PLG_USER_ECOMAIL_API_KEY"
+					default=""
+				/>
+    
+				<field
+					name="listID"
+					type="number"
+					label="PLG_USER_ECOMAIL_LIST_ID"
+					default=""
+				/>
+
+				<field 
+					name="note1" 
+					type="note" 
+					class="form-text" 
+					label="PLG_USER_ECOMAIL_MODE"
+					description="PLG_USER_ECOMAIL_MODE_DESC" 
+				/>			
+
+				<field
+					name="autoSubscribe"
+					type="radio"
+					label="PLG_USER_ECOMAIL_AUTO_SUBSCRIBE"
+					layout="joomla.form.field.radio.switcher"
+					default="true"										
+					>
+					<option value="false">JNO</option>
+					<option value="true">JYES</option>
+					
+				</field>
+
+				<field 
+					name="note2" 
+					type="note" 
+					class="form-text" 
+					description="PLG_USER_ECOMAIL_AUTO_SUBSCRIBE_DESC"
+					showon="autoSubscribe:false"
+				/>						
+				
+				<field 
+					name="note3" 
+					type="note" 
+					class="form-text mt-4" 
+					label="PLG_USER_ECOMAIL_ADVANCED_SETTINGS"
+				/>			
+
+				<field
+					name="saveSplitName"
+					type="radio"
+					label="PLG_USER_ECOMAIL_SAVE_SPLIT_NAME"
+					layout="joomla.form.field.radio.switcher"
+					default="false"										
+					>
+					<option value="false">JNO</option>
+					<option value="true">JYES</option>
+					
+				</field>
+
+				<field
+					name="source"
+					type="text"
+					label="PLG_USER_ECOMAIL_SOURCE"
+					default="API"
+				/>
+
+				<field
+					name="updateExisting"
+					type="radio"
+					label="PLG_USER_ECOMAIL_UPDATE_EXISTING"
+					layout="joomla.form.field.radio.switcher"
+					default="false"					
+					>
+					<option value="false">JNO</option>
+					<option value="true">JYES</option>
+					
+				</field>
+
+				<field
+					name="resubscribe"
+					type="radio"
+					label="PLG_USER_ECOMAIL_RESUBSCRIBE"
+					layout="joomla.form.field.radio.switcher"
+					default="false"					
+					>
+					<option value="false">JNO</option>
+					<option value="true">JYES</option>
+					
+				</field>
+
+				<field
+					name="skipConfirmation"
+					type="radio"
+					label="PLG_USER_ECOMAIL_SKIP_CONFIRMATION"
+					layout="joomla.form.field.radio.switcher"
+					default="false"					
+					>
+					<option value="false">JNO</option>
+					<option value="true">JYES</option>
+					
+				</field>
+
+				<field
+					name="autoresponders"
+					type="radio"
+					label="PLG_USER_ECOMAIL_AUTORESPONDERS"
+					layout="joomla.form.field.radio.switcher"
+					default="false"					
+					>
+					<option value="false">JNO</option>
+					<option value="true">JYES</option>
+					
+				</field>
+
+				<field name="support" type="note" class="bg-light border p-5 w-100" label="PLG_USER_ECOMAIL_SUPPORT" description="PLG_USER_ECOMAIL_SUPPORT_BODY" />
+
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>
