@@ -1,5 +1,5 @@
 # Ecomail for Joomla
-A plugin for the integration of Joomla registration form with Ecomail.
+A plugin for the integration of Joomla registration form with [Ecomail](https://ecomail.cz?fpr=petbe).
 Subscribe users during registration on the website.
 
 ### Features:
@@ -27,6 +27,7 @@ Example:
 
 This plugin use official PHP library for dealing with Ecomail API https://github.com/Ecomailcz/ecomail-php
 
-
+[https://ecomail.cz](https://ecomail.cz?fpr=petbe)
+[https://ecomail.app](https://ecomail.app)
 
 
