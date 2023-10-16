@@ -30,4 +30,5 @@ This plugin use official PHP library for dealing with Ecomail API https://github
 
 ### Support
 You can support my work by purchasing an Ecomail subscription through that link: https://ecomail.cz?fpr=petbe
+
 Or you can [Buy Me a Coffe](https://www.buymeacoffee.com/petrbenes)
