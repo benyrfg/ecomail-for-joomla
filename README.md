@@ -3,7 +3,7 @@ A plugin for the integration of Joomla registration form with Ecomail.
 Subscribe users during registration on the website.
 
 Features:
-- *automatic* od *consent* mode (user may be subscribed automatically or by clicking on checkbox)
+- **automatic** od **consent** mode (user may be subscribed automatically or by clicking on checkbox)
 - option to name and surname collection
 - option to update existing contacts
 - option to resubscribe
@@ -12,12 +12,12 @@ Features:
 
 
 ### How to add subscribe checkbox to the registration form
-Follow this instructions if you choose *consent* mode
+Follow this instructions if you choose **consent** mode
 - create a user custom field type *checkbox* (Users->Fields->New)
-- add a checkbox text you wish and value, value ** must be exact "subscribe" **
+- add a checkbox text you wish and value, value **__must be exact "subscribe"__**
 
 Example:
-!(assets/img/ecom-img.png)
+!(https://github.com/benyrfg/ecomail-for-joomla/assets/img/ecom-img.png)
 
 
 Compatibillity:
