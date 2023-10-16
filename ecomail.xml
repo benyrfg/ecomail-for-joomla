@@ -13,7 +13,9 @@
 		<filename plugin="ecomail">ecomail.php</filename>
 	</files>
 	 	<languages folder="plugin">
-        <language tag="en-GB">language/en-GB.plg_user_ecomail.ini</language>
+        <language tag="en-GB">language/en-GB.plg_user_ecomail.sys.ini</language>
+		<language tag="en-GB">language/en-GB.plg_user_ecomail.ini</language>
+        <language tag="cs-CZ">language/cs-CZ.plg_user_ecomail.sys.ini</language>
         <language tag="cs-CZ">language/cs-CZ.plg_user_ecomail.ini</language>
     </languages>
 	<config>
