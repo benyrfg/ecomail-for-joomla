@@ -27,7 +27,7 @@ Example:
 
 This plugin use official PHP library for dealing with Ecomail API https://github.com/Ecomailcz/ecomail-php
 
-[https://ecomail.cz](https://ecomail.cz?fpr=petbe)
-[https://ecomail.app](https://ecomail.app)
 
-
+### Support
+You can support my work by purchasing an Ecomail subscription through that link: https://ecomail.cz?fpr=petbe
+Or you can [Buy Me a Coffe](https://www.buymeacoffee.com/petrbenes)
