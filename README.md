@@ -17,7 +17,7 @@ Follow this instructions if you choose **consent** mode
 - add a checkbox text you wish and value, value **__must be exact "subscribe"__**
 
 Example:
-!(https://github.com/benyrfg/ecomail-for-joomla/assets/img/ecom-img.png)
+![How to add checkbox](assets/img/ecom-img.png)
 
 
 Compatibillity:
