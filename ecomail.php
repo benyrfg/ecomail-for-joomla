@@ -78,7 +78,7 @@ class PlgUserEcomail extends CMSPlugin
                     if($fullName['firstName'] != ""){
                         $params["subscriber_data"]["name"] = $fullName['firstName'];
                     }
-                    if($fullName['lastName'] != ""){
+                    if($fullName['surname'] != ""){
                         $params["subscriber_data"]["surname"] = $fullName['surname'];
                     }
                 }              

@@ -19,8 +19,9 @@ Subscribe users during registration on the website.
 
 ### How to add subscribe checkbox to the registration form
 Follow this instructions if you choose **opt-in** mode
-- create a user custom field type *checkbox* (Users->Fields->New)
-- add a checkbox text you wish and value, value **__must be exact "subscribe"__**
+- create a user custom field type *checkboxes* (Users->Fields->New)
+- in the field *Checkbox values* click on the plus button
+- fill the text and value fields, value **__must be exact "subscribe"__**
 
 Example:
 
