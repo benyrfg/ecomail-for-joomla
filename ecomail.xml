@@ -11,6 +11,8 @@
 	<description>PLG_USER_ECOMAIL_PLUGIN_DESC</description>
 	<files>
 		<filename plugin="ecomail">ecomail.php</filename>
+		<folder plugin="ecomail">includes</folder>
+		<folder plugin="ecomail">language</folder>
 	</files>
 	<languages>
 		<language tag="en-GB">language/en-GB/en-GB.plg_user_ecomail.ini</language>
