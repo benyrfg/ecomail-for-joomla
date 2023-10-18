@@ -12,12 +12,11 @@
 	<files>
 		<filename plugin="ecomail">ecomail.php</filename>
 	</files>
-	 	<languages folder="plugin">
+	<languages folder="plugin">
 		<language tag="en-GB">language/en-GB/en-GB.plg_user_ecomail.ini</language>
 		<language tag="en-GB">language/en-GB/en-GB.plg_user_ecomail.sys.ini</language>
         <language tag="cs-CZ">language/cs-CZ/cs-CZ.plg_user_ecomail.ini</language>
 		<language tag="cs-CZ">language/cs-CZ/cs-CZ.plg_user_ecomail.sys.ini</language>
-
     </languages>
 	<config>
 		<fields name="params">
