@@ -140,7 +140,7 @@
 					
 				</field>
 
-				<field name="support" type="note" class="bg-light border p-5 w-100" label="PLG_USER_ECOMAIL_SUPPORT" description="PLG_USER_ECOMAIL_SUPPORT_BODY" />
+				<field name="support" type="note" class="bg-light text-dark border p-5 w-100" label="PLG_USER_ECOMAIL_SUPPORT" description="PLG_USER_ECOMAIL_SUPPORT_BODY" />
 
 			</fieldset>
 

@@ -62,17 +62,16 @@ class PlgUserEcomail extends CMSPlugin
                 $result = "subscribe";
             }            
 
-            JLog::add($result, JLog::ERROR, 'jerror');
-
             if($result == "subscribe"){
 
                 $params = array(
                     "subscriber_data" => array (               
                         "email" => $user['email'],
                     ),                      
-                    "trigger_autoresponders" => false,
-                    "update_existing" => true,
-                    "resubscribe" => true
+                    "trigger_autoresponders" => $autoresponders,
+                    "update_existing" => $updateExisting,
+                    "resubscribe" => $resubscribe,
+                    "skip_confirmation" => $skipConfirmation
                       
                 );
 
@@ -97,9 +96,6 @@ class PlgUserEcomail extends CMSPlugin
             }
             
         }
-        
-        //JLog::add(json_encode($ecomail), JLog::ERROR, 'jerror');
-        //JFactory::getApplication()->enqueueMessage(json_encode($ecomail));
         
 
 		return;
