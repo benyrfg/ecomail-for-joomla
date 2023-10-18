@@ -60,11 +60,11 @@ class PlgUserEcomail extends CMSPlugin
                 $params = array(
                     "subscriber_data" => array (               
                         "email" => $user['email'],
-                    )/*,                      
+                    ),                      
                     "trigger_autoresponders" => $autoresponders,
                     "update_existing" => $updateExisting,
                     "resubscribe" => $resubscribe,
-                    "skip_confirmation" => $skipConfirmation*/
+                    "skip_confirmation" => $skipConfirmation
                       
                 );
 
@@ -88,7 +88,6 @@ class PlgUserEcomail extends CMSPlugin
                 $ecomail = new Ecomail($key);        
                 $ecomail->addSubscriber($listID, $params);              
 
-                JLog::add(json_encode($ecomail), JLog::ERROR, 'jerror');
                
             }
             
