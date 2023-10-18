@@ -37,14 +37,7 @@ class PlgUserEcomail extends CMSPlugin
         $skipConfirmation = filter_var($this->params->get('skipConfirmation', 'false'), FILTER_VALIDATE_BOOLEAN);
         $autoresponders =   filter_var($this->params->get('autoresponders', 'false'), FILTER_VALIDATE_BOOLEAN);
 
-        function splitName($fullName) {
-            $words = explode(' ', $fullName);
-            $firstName = $words[0];
-            $lastName = implode(' ', array_slice($words, 1));
-            return array('firstName' => $firstName, 'lastName' => $lastName);
-        }
-
-
+        
         if($isnew === true AND $success === true){
 
             if($autoSubscribe === false){
@@ -101,6 +94,12 @@ class PlgUserEcomail extends CMSPlugin
 		return;
 	}
 
+    private function splitName($fullName) {
+        $words = explode(' ', $fullName);
+        $firstName = $words[0];
+        $lastName = implode(' ', array_slice($words, 1));
+        return array('firstName' => $firstName, 'lastName' => $lastName);
+    }
 
 }
 ?>
