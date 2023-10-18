@@ -28,9 +28,9 @@ Example:
 ![How to add checkbox](assets/img/ecom-img.png)
 
 
-### Compatibillity:
-- Joomla 4
-- Joomla 5
+### Compatibillity & requirements:
+- Joomla 4 / Joomla 5
+- valid SSL certificate (all requests to Ecomail API must be from https, not works on localhost without https etc.)
 
 
 This plugin use official PHP library for dealing with Ecomail API https://github.com/Ecomailcz/ecomail-php
