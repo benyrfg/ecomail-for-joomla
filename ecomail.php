@@ -69,9 +69,11 @@ class PlgUserEcomail extends CMSPlugin
                 );
 
                 // save split name
-                if($saveSplitName === true ){
-                    
-                    $fullName = splitName($user['name']);
+                if($saveSplitName === true ){                
+                    $words = explode(' ', $user['name']);
+                    $firstName = $words[0];
+                    $lastName = implode(' ', array_slice($words, 1));
+                    $fullName = array('firstName' => $firstName, 'lastName' => $lastName);
 
                     if($fullName['firstName'] != ""){
                         $params["subscriber_data"]["name"] = $fullName['firstName'];
@@ -93,13 +95,6 @@ class PlgUserEcomail extends CMSPlugin
 
 		return;
 	}
-
-    private function splitName($fullName) {
-        $words = explode(' ', $fullName);
-        $firstName = $words[0];
-        $lastName = implode(' ', array_slice($words, 1));
-        return array('firstName' => $firstName, 'lastName' => $lastName);
-    }
 
 }
 ?>
