@@ -60,11 +60,11 @@ class PlgUserEcomail extends CMSPlugin
                 $params = array(
                     "subscriber_data" => array (               
                         "email" => $user['email'],
-                    ),                      
+                    )/*,                      
                     "trigger_autoresponders" => $autoresponders,
                     "update_existing" => $updateExisting,
                     "resubscribe" => $resubscribe,
-                    "skip_confirmation" => $skipConfirmation
+                    "skip_confirmation" => $skipConfirmation*/
                       
                 );
 
@@ -73,13 +73,13 @@ class PlgUserEcomail extends CMSPlugin
                     $words = explode(' ', $user['name']);
                     $firstName = $words[0];
                     $lastName = implode(' ', array_slice($words, 1));
-                    $fullName = array('firstName' => $firstName, 'lastName' => $lastName);
+                    $fullName = array('firstName' => $firstName, 'surname' => $lastName);
 
                     if($fullName['firstName'] != ""){
                         $params["subscriber_data"]["name"] = $fullName['firstName'];
                     }
                     if($fullName['lastName'] != ""){
-                        $params["subscriber_data"]["surname"] = $fullName['lastName'];
+                        $params["subscriber_data"]["surname"] = $fullName['surname'];
                     }
                 }              
                 
@@ -87,6 +87,8 @@ class PlgUserEcomail extends CMSPlugin
                 require_once __DIR__ . '/includes/Ecomail.php';
                 $ecomail = new Ecomail($key);        
                 $ecomail->addSubscriber($listID, $params);              
+
+                JLog::add(json_encode($ecomail), JLog::ERROR, 'jerror');
                
             }
             
